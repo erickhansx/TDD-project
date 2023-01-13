@@ -20,7 +20,7 @@ describe 'Solver' do
       expect { Solver.reverse(10) }.to raise_error(NoMethodError)
     end
   end
-  context 'fizzbuzz' do 
+  context 'fizzbuzz' do
     it 'Test return a string when number not %3 or %5' do
       expect(Solver.fizzbuzz(7)).to be_a(String)
     end
@@ -34,6 +34,4 @@ describe 'Solver' do
       expect(Solver.fizzbuzz(15)).to eql('fizzbuzz')
     end
   end
-  end
-  
-  
+end
