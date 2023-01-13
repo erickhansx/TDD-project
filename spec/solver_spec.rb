@@ -11,6 +11,9 @@ describe 'Solver' do
     it 'Test if the integer passed is 0 to return 1' do
       expect(Solver.factorial(0)).to eq(1)
     end
+    it 'Test if the integer passed is negative return nil' do
+      expect(Solver.factorial(-1)).to eql(nil)
+    end
   end
   context '#reverse' do
     it 'Test when it takes one word and return it reversed' do

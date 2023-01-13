@@ -1,6 +1,6 @@
 class Solver
   def self.factorial(num)
-    if !num.is_a? Numeric
+    if (!num.is_a? Numeric) || num.negative?
       puts 'Please enter a valid number'
     elsif num.zero?
       num = 1
