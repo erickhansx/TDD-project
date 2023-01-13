@@ -1,4 +1,4 @@
-require_relative '../testing'
+require_relative '../solver'
 
 describe 'Solver' do
   context '#factorial' do
