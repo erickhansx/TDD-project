@@ -7,4 +7,9 @@ class Solver
     end
     num.downto(1).reduce(:*)
   end
+  def self.reverse(str)
+    str.reverse
+  end
 end
+
+puts Solver.reverse('Erick')
