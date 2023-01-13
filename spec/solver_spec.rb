@@ -8,5 +8,8 @@ describe 'Solver' do
    it 'Test if the argument passed is an integer if not throw' do 
     expect{ Solver.factorial("hi") }.to raise_error(NoMethodError)
    end
+   it 'Test if the integer passed is 0 to return 1' do
+    expect(Solver.factorial(0)).to eq(1)
+   end
   end
 end
